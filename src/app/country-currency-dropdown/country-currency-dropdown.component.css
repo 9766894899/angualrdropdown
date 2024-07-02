@@ -1,0 +1,19 @@
+.flag-icon {
+    margin-right: 10px;
+  }
+  
+  .dropdown {
+    margin: 20px 0;
+  }
+  
+  .dropdown select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,14 @@
+<div class="dropdown" ngbDropdown>
+    <button class="btn btn-primary dropdown-toggle" ngbDropdownToggle>
+        <span *ngIf="selectedCurrency" [class]="'flag-icon flag-icon-' + selectedCurrency?.code"></span> {{ getSelectedCurrencyText() }}
+    </button>
+    <div ngbDropdownMenu>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" [(ngModel)]="searchTerm"
+                (ngModelChange)="onSearchChange($event)" />
+        </div>
+        <button class="dropdown-item" *ngFor="let item of filteredData" (click)="selectCurrency(item)">
+            <span [class]="'flag-icon flag-icon-' + item.code"></span> {{item.currency}}
+        </button>
+    </div>
+</div>
